@@ -1,43 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+      name="DESCRIPTION"
+      content="Rodzina zbierała się regularnie w salonie, by muzykować. Matka grała na fortepianie i śpiewała, ojciec z kolei grywał na skrzypcach i flecie. Dzieci organizowały też występy teatralne, gry i zabawy. Wszystko to wypełniało wieczory w domu państwa Chopinów, wybrzmiewającym szczebiotem czworga rodzeństwa."
+    />
+    <meta
+      name="Chopin był niezwykle utalentowany muzycznie, dobrze pisał, lubił teatr, miał też zdolności plastyczne – brał udział w lekcjach rysunku prowadzonych przez Zygmunta Vogla."
+      content="index, follow"
+    />
+    <meta name="handheldFriendly" content="true" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Po sześciu latach wspólnej pracy poczciwy Czech uznał, że niczego więcej nie jest już w stanie go nauczyć."
+    />
+    <meta property="og:url" content="https://arka-przymierza.netlify.app" />
+    <meta
+      property="og:image"
+      content="https://arka-przymierza.netlify.app/19.jpg"
+    />
+    <meta property="fb:app_id" content="1951716098397474" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="1200" />
+    <meta
+      property="business:contact_data:street_address"
+      content="Młody Chopin"
+    />
+    <meta
+      property="business:contact_data:locality"
+      content="Wtedy Fryderyk trafił pod opiekę Józefa Elsnera, kompozytora, pedagoga, teoretyka muzyki. To on napisał na dyplomie ukończenia przez Fryderyka Szkoły Głównej Muzyki słynne słowa: „Fryderyk Chopin - Szczególna zdatność, geniusz muzyczny”."
+    />
+    <meta
+      property="business:contact_data:region"
+      content="Brał udział w wiejskich zabawach, przysłuchiwał się śpiewom parobków, uczestniczył w potańcówkach. Zdarzyło mu się nawet przygrywać do tańca na basetli."
+    />
+    <meta property="business:contact_data:postal_code" content="26-600" />
+    <meta
+      property="business:contact_data:country_name"
+      content="Dzieciństwo Fryderyka Chopina"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://twitter.com/chopininstitute" />
+    <meta
+      name="twitter:title"
+      content="Muzyka ludowa odcisnęła duże piętno na młodym chłopaku wychowanym w warszawskim salonie. Fascynowała go nie tylko warstwa dźwiękowa, ale też słowna. Zdarzało mu się notować teksty przyśpiewek usłyszanych podczas pobytu w Szafarni."
+    />
+    <meta
+      name="twitter:description"
+      content="Szczęśliwe dzieciństwo, ciepły dom rodzinny, szeroki krąg przyjaciół wpłynęły na osobowość Chopina. Ta baza ukształtowała w jakiejś mierze jego charakter i wpłynęła na relacje społeczne w dorosłym życiu."
+    />
+    <meta
+      name="twitter:image"
+      content="https://arka-przymierza.netlify.app/13.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="W utworach Chopina pobrzmiewają rytmy i melodyka oberków czy kujawiaków, wplecione z niezwykłą elegancją i kunsztem w całość kompozycji, co stanowi jego znak rozpoznawczy."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Fryckowe lato</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="modal"></div>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "VideoObject",
+        "name": "Młodość Chopina",
+        "contentUrl": "https://pl-pl.facebook.com/instytut.chopina",
+        "duration": "PT00H04M33S",
+        "thumbnailUrl": "https://arka-przymierza.netlify.app/2.jpg",
+        "uploadDate": "2022-02-21",
+        "description": "Mając 7 lat Fryderyk miał już skomponowanych kilka drobnych utworów. Zaczął grywać w salonach arystokracji warszawskiej."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Blog",
+        "url": "https://arka-przymierza.netlify.app"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Fryderyk Chopin",
+        "url": "https://arka-przymierza.netlify.app",
+        "sameAs": [
+          "https://pl-pl.facebook.com/instytut.chopina",
+          "https://pl.wikipedia.org/wiki/Fryderyk_Chopin",
+          "https://twitter.com/chopininstitute",
+          "https://www.youtube.com/watch?v=P145ULbuzLw",
+          "https://pl.pinterest.com/claudiapriv/chopin"
+        ]
+      }
+    </script>
   </body>
 </html>

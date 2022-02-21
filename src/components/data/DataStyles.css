@@ -1,0 +1,56 @@
+.data {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+}
+.data::before {
+  content: "";
+  position: absolute;
+  background: url("../../assets/15.jpg") center center/cover no-repeat fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.data .content {
+  margin: 1rem 0;
+  display: flex;
+  color: var(--white-color);
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  width: 50%;
+  font-family: "Imbue", serif;
+}
+.data .content p {
+  font-family: "Stint Ultra Condensed", cursive;
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+}
+.data .content em {
+  font-size: 1rem;
+  color: var(--white-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .data .content {
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  .data .content h2 {
+    text-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.21);
+    font-size: 2rem;
+  }
+  .data .content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 11;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--primary-dark);
+  }
+}

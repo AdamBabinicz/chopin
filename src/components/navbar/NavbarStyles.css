@@ -1,0 +1,75 @@
+.navbar {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  margin: 1rem;
+  font-family: "Imbue", serif;
+}
+.navbar .logo .icon {
+  font-size: 3rem;
+  margin-right: 1rem;
+  color: var(--primary-color);
+}
+.hamburger {
+  display: none;
+  padding: 1rem;
+}
+.navbar .nav-menu {
+  display: flex;
+  height: 100%;
+  padding: 1rem;
+  align-items: center;
+}
+.navbar li {
+  padding: 1rem;
+  font-weight: 600;
+  color: var(--white-color);
+  font-family: "Syne Tactile", cursive;
+}
+.navbar .icon {
+  font-size: 1.4rem;
+  color: var(--white-color);
+}
+
+@media only screen and (max-width: 940px) {
+  .navbar .hamburger {
+    display: block;
+    z-index: 15;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+  }
+  .navbar .nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar .active {
+    left: 0;
+  }
+  .navbar li {
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+  .navbar button {
+    font-size: 1.8rem;
+  }
+}
