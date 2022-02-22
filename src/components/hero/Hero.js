@@ -24,7 +24,7 @@ const Hero = () => {
             title="Fryderyk Chopin na Ziemi Dobrzyńskiej i Chełmińskiej"
           >
             <p>
-              Po ukończeniu IV klasy Liceum Warszawskiego czternastoletni
+              "Po ukończeniu IV klasy Liceum Warszawskiego czternastoletni
               Fryderyk został zaproszony przez rodziców Dominika Dziewanowskiego
               do ich majątku – Szafarni, znajdującego się wtedy blisko granicy
               zaboru pruskiego, obecnie w powiecie golubsko- dobrzyńskim, około
@@ -40,7 +40,7 @@ const Hero = () => {
               wszystkich atrakcji życia wiejskiego, w pierwszym liście
               zawiadamiał: „Jestem zdrów z łaski Pana Boga i najprzyjemniej
               zawsze czas mi schodzi. Nie czytam, nie piszę, ale gram, rysuję,
-              biegam, używam świeżego powietrza”.
+              biegam, używam świeżego powietrza”."
             </p>
             <br />
             <p>

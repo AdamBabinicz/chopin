@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactStyles.css";
+import Modal from "../Portal/Modal";
 
 const Contact = () => {
+  const [modal, setModal] = useState(false);
+  const Toggle = () => setModal(!modal);
+
   return (
     <div className="contact">
       <div className="container">
@@ -30,8 +34,29 @@ const Contact = () => {
           </p>
           <em>(chopin.nifc.pl)</em>
           <div>
-            <button>Więcej</button>
+            <button onClick={() => Toggle()}>Więcej</button>
           </div>
+          <Modal show={modal} close={Toggle} title="Złote dziecko">
+            <p>
+              "Fryderyk Chopin zaczął komponować już w wieku kilku lat. Na
+              początku były to polonezy. Szybko zyskał sławę w Warszawie.
+              Uchodził za złote dziecko. Jako siedmiolatek zagrał przed księciem
+              Konstantym. Wtedy też do druku wszedł jego pierwszy utwór: Polonez
+              w tonacji g-moll. W 1822 r., gdy Fryderyk Chopin miał niespełna 12
+              lat, "Pamiętnik Warszawski" opisał go jako muzycznego geniusza,
+              przedstawiając go jako wybitnego fortepianistę oraz kompozytora
+              wariacji i tańców. Gdy w 1825 r. Fryderyk Chopin wystąpił przed
+              carem Aleksandrem I, ten był tak zachwycony, że ofiarował mu
+              bardzo drogi pierścień. Młody muzyk później go sprzedał. Odrzucił
+              też ofertę zostania nadwornym kompozytorem carskim."
+            </p>
+            <br />
+            <p>
+              <em>
+                wiadomosci.onet.pl/kraj/fryderyk-chopin-zyciorys-dziela-zycie-prywatne/jsvy9sm
+              </em>
+            </p>
+          </Modal>
         </div>
       </div>
     </div>

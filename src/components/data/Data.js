@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./DataStyles.css";
+import Modal from "../Portal/Modal";
 
 const Data = () => {
+  const [modal, setModal] = useState(false);
+  const Toggle = () => setModal(!modal);
+
   return (
     <div className="data">
       <div className="container">
@@ -29,8 +33,34 @@ const Data = () => {
           </p>
           <em>(chopin.nifc.pl)</em>
           <div>
-            <button>Czytaj</button>
+            <button onClick={() => Toggle()}>Czytaj</button>
           </div>
+          <Modal
+            show={modal}
+            close={Toggle}
+            title="O pobycie Fryderyka Chopina w Dusznikach-Zdroju"
+          >
+            <p>
+              ""Świeże powietrze i serwatka, którą pijam skwapliwie, tak mię
+              postawiły na nogi, że jestem całkiem inny niż w Warszawie.
+              Wspaniałe widoki, jakie roztacza Śląsk, czarują i zachwycają
+              mnie”. Tak w liście do swojego przyjaciela Józefa Elsnera pisał o
+              Dusznikach-Zdroju Fryderyk Chopina. Nie wspomniał w nim co prawda
+              o tym, że na zbyt długie spacery mu nie pozwalano, ale swoje
+              zobaczył. Pobyt Chopina w tym mieście był krótki. Trwał od 3
+              sierpnia do 8 września 1826 roku. Chopin miał wówczas 16 lat i
+              przyjechał w towarzystwie matki i siostry. Przyjechał, by leczyć
+              swoje suchoty. Wszystko zaczyna się w roku 1818, kiedy to na
+              kuracji w Bad Reinerz (niemiecka nazwa miasta) przebywał
+              znamienity muzyk i nauczyciel Fryderyka Chopina - Józef Elsner."
+            </p>
+            <br />
+            <p>
+              <em>
+                dusznikizdroj.naszemiasto.pl/o-pobycie-fryderyka-chopina-w-dusznikach-zdroju/ar/c13-4261571
+              </em>
+            </p>
+          </Modal>
         </div>
       </div>
     </div>

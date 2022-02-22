@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./RecoveryStyles.css";
+import Modal from "../Portal/Modal";
 
 const Recovery = () => {
+  const [modal, setModal] = useState(false);
+  const Toggle = () => setModal(!modal);
+
   return (
     <div className="recovery">
       <div className="container">
@@ -30,8 +34,30 @@ const Recovery = () => {
           </p>
           <em>(chopin.nifc.pl)</em>
           <div>
-            <button>Więcej</button>
+            <button onClick={() => Toggle()}>Więcej</button>
           </div>
+          <Modal show={modal} close={Toggle} title="Szafarnia">
+            <p>
+              "Dzięki „Kuryerom” rodzice Fryderyka mogli dowiedzieć się jak
+              wolny czas spędza ich syn. W relacji z datą 16 sierpnia 1824 r. w
+              „Wiadomości Krayowych” czytamy: „Dnia 11 Sierpnia r. b. odbywał
+              J.P. Fryderyk Chopin kursa na dzielnym koniu i ubiegał się, do
+              mety: a lubo po kilkakroć pieszo idąc Panią Dziewanowską wyścignąć
+              nie mógł (w czem nie iego, lecz konia wina była) otrzymał iednak
+              zwycięztwo nad Panną Ludwiką, która iuż dość blisko mety piechotą
+              doszła. – J.P. Franciszek Chopin wyieżdża codzień na spacer, z
+              takimi iednak honorami, iż zawsze na tyle siada. J.P. Jakób Chopin
+              wypiia na dzień sześć filiżanek kawy żołędziowej, Mikołaiek zaś co
+              dzień cztery bułeczki ziada, notebene prócz potężnego obiadu i
+              trzypotrawney kolacyjki”."
+            </p>
+            <br />
+            <p>
+              <em>
+                greatcomposers.nifc.pl/pl/chopin/catalogs/places/121_szafarnia
+              </em>
+            </p>
+          </Modal>
         </div>
       </div>
     </div>
