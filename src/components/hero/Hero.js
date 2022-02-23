@@ -36,11 +36,7 @@ const Hero = () => {
               zakaz spożywania wiejskiego chleba, jednak mimo to ściśle
               przestrzegał zaleceń lekarza. Posłusznie jadł specjalnie dla niego
               pieczone bułeczki, pił wywary ziołowe i kawę żołędziową, łykał
-              przywiezione ze sobą lekarstwa. I choć nie mógł skorzystać ze
-              wszystkich atrakcji życia wiejskiego, w pierwszym liście
-              zawiadamiał: „Jestem zdrów z łaski Pana Boga i najprzyjemniej
-              zawsze czas mi schodzi. Nie czytam, nie piszę, ale gram, rysuję,
-              biegam, używam świeżego powietrza”."
+              przywiezione ze sobą lekarstwa."
             </p>
             <br />
             <p>
