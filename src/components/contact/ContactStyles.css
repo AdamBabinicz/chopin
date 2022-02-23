@@ -47,7 +47,7 @@
   }
   .contact p {
     display: -webkit-box;
-    -webkit-line-clamp: 15;
+    -webkit-line-clamp: 12;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
