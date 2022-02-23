@@ -40,7 +40,7 @@ const Hero = () => {
             </p>
             <br />
             <p>
-              <em>https://szafarnia.art.pl/chopin-u-nas/</em>
+              <em>szafarnia.art.pl/chopin-u-nas</em>
             </p>
           </Modal>
         </div>
